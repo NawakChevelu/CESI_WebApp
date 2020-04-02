@@ -1,7 +1,12 @@
 <h2>Mes Incidents</h2>
 
 <ul class="incidents">
-    <li *ngFor="let incident of incidents">
+    <li *ngFor="let incident of incidents"
+      [class.selected]="incident === selectedIncident"
+      (click)="onSelect(incident)">
       <span class="badge">{{incident.id}}</span> {{incident.description_courte}} {{incident.date_creation}} {{incident.criticite}}
     </li> 
 </ul>
+
+<app-incident-detail [incident]="selectedIncident"></app-incident-detail>
+

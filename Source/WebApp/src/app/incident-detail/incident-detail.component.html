@@ -1,0 +1,16 @@
+<div *ngIf="incident" class="side">
+    <h2>Détails de l'incident {{incident.id}}</h2>
+    <div>
+        <div>
+            <label>id: 
+                <input [(ngModel)]="incident.id" placeholder="id"/>
+            </label>
+        </div>
+        <p>Description courte : {{incident.description_courte}}</p>
+        <p>Description longue : {{incident.description_longue}}</p>
+        <p>Date création : {{incident.date_creation}}</p>
+        <p>Criticité : {{incident.criticite}}</p>
+        <p>Status : {{incident.status}}</p>
+    </div>
+
+</div>

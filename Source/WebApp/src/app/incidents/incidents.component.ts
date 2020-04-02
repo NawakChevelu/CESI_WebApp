@@ -11,9 +11,15 @@ export class IncidentsComponent implements OnInit {
 
   incidents = INCIDENTS;
 
+  selectedIncident: Incident;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelect(incident: Incident): void {
+    this.selectedIncident = incident;
   }
 
 }

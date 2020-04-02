@@ -1,18 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IncidentsComponent } from './incidents/incidents.component';
+import { IncidentDetailComponent } from './incident-detail/incident-detail.component';
+import { BtnAddIncidentComponent } from './btn-add-incident/btn-add-incident.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IncidentsComponent
+    IncidentsComponent,
+    IncidentDetailComponent,
+    BtnAddIncidentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
