@@ -4,7 +4,7 @@
     <li *ngFor="let incident of incidents"
       [class.selected]="incident === selectedIncident"
       (click)="onSelect(incident)">
-      <span class="badge">{{incident.id}}</span> {{incident.description_courte}} {{incident.date_creation}} {{incident.criticite}}
+      <span class="badge">{{incident.id}}</span> <b>Sujet :</b> {{incident.description_courte}}  <b> | Date :</b> {{incident.date_creation}}<b> | Criticité :</b> {{incident.criticite}}
     </li> 
 </ul>
 
