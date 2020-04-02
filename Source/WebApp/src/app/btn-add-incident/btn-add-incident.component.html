@@ -1,8 +1,8 @@
 <button (click)="addIncident()" id= btn_incident>Ajouter intervention
     {{btn_incident}}
 </button>
-<div id="MonFormulaire">
-    <form id="form-id" method="post" action="scripts/formmail.php" (ngSubmit)="onSubmit(f)" #f="ngForm">
+<div *ngIf = show id="MonFormulaire">
+    <form id="form-id" method="post" action="scripts/formmail.php" #f="ngForm">
         <div class="form-group"> 
             <li id="li-nom">
                 <label for="adresseMail">Adresse mail</label>
