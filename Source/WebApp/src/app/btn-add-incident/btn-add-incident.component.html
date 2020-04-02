@@ -1,0 +1,31 @@
+<button (click)="addIncident()" id= btn_incident>Ajouter intervention
+    {{btn_incident}}
+</button>
+<div id="MonFormulaire">
+    <form id="form-id" method="post" action="scripts/formmail.php" (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-group"> 
+            <li id="li-nom">
+                <label for="adresseMail">Adresse mail</label>
+                <input id="adresseMail" class="form-cadre" type="text" placeholder="exemple@exemple.com" title="adresse mail" name="adresseMail" ngModel />
+            </li>
+        </div>
+        <div class="form-group">
+            <li id="descriptionIncident-li" class="">
+                <textarea id="descriptionIncident"  class="form-cadre" placeholder="Descrivez ci-dessous l'incident rencontré" title="Description de l'incident" name="descriptionIncident" ngModel></textarea>
+            </li>
+        </div>
+        <div class="form-group">
+            <li id="crit">
+                <label>Veuillez indiquer la gravité de l'incident : </label>
+                <select name="choixCriticite" ngModel>
+                    <option>Mineur</option>
+                    <option>Majeur</option>
+                    <option>Critique</option>
+                </select>
+            </li>
+        </div>
+            <button (click) = 'onSubmit(f)' type="submit" id="Btn-Submit">SOUMETTRE</button>
+
+    </form>
+
+    

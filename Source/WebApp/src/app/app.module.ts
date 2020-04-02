@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IncidentsComponent } from './incidents/incidents.component';
 import { IncidentDetailComponent } from './incident-detail/incident-detail.component';
+import { BtnAddIncidentComponent } from './btn-add-incident/btn-add-incident.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IncidentsComponent,
-    IncidentDetailComponent
+    IncidentDetailComponent,
+    BtnAddIncidentComponent
   ],
   imports: [
     BrowserModule,
