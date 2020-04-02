@@ -2,7 +2,6 @@ import { Incident } from './incident';
 
 let date = new Date(2017,4,4);
 
-
 export const INCIDENTS: Incident[] = [
     {id: 1, description_courte: "test1", description_longue: "test mais plus long1", date_creation: date, criticite: 1, status: "résolu"},
     {id: 2, description_courte: "test2", description_longue: "test mais plus long2", date_creation: date, criticite: 2, status: "en cours"},

@@ -1,5 +1,8 @@
 /* IncidentsComponent's private CSS styles */
 .incidents {
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
@@ -10,7 +13,7 @@
   position: relative;
   left: 0;
   background-color: #EEE;
-  margin: .5em;
+  
   padding: .3em 0;
   height: 1.6em;
   border-radius: 4px;
@@ -42,3 +45,4 @@
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
+
